@@ -9,6 +9,7 @@ namespace TicTacToe
             char[] board = TicTacToeGame.StartGame();
             string playerInput = TicTacToeGame.GetPlayerInput();
             String ComputerInput = TicTacToeGame.GetComputerInput(playerInput);
+            Console.WriteLine("Player input: "+playerInput+"\nComputer Input is: "+ComputerInput);
 
         }
     }

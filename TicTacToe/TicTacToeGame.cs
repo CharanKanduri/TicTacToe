@@ -22,20 +22,25 @@ namespace TicTacToe
         public static string GetPlayerInput()
         {   
             string playerInput;
-            Console.WriteLine("/nEnter Player Input");
+            Console.WriteLine("\nEnter Player Input");
             playerInput = Console.ReadLine();
             return playerInput;
         }
         public static string GetComputerInput(string playerInput)
         {
-            string computerInput;
-            if (playerInput == "X")
+            string computerInput =" ";
+
+            if (playerInput == "X" || playerInput == "x")
             {
                 computerInput = "O";
             }
-            else
+            else if (playerInput == "O" || playerInput == "o")
             {
                 computerInput = "X";
+            }
+            else
+            {
+                Console.WriteLine("\nEnter correct chioce");
             }
 
             return computerInput;
