@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace TicTacToe
 {
-    class TicTacToeGame
+    public class TicTacToeGame
     {
-        public void StartGame()
-        {
-            char[] boardArr = {' ',' ',' ', ' ',' ',' ',' ',' ',' ',' '};
+        public static char[] StartGame()
+        {   
+            char[] boardArr = new char[10];
+
+            for (int i=1; i<boardArr.Length; i++)
+            {
+                boardArr[i] = ' ';
+            }
+            return boardArr;
         }
     }
 }
