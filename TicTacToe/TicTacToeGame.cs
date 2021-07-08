@@ -14,7 +14,7 @@ namespace TicTacToe
 
             for (int i=1; i<boardArr.Length; i++)
             {
-                boardArr[i] = ' ';
+                boardArr[i] = '0';
             }
             return boardArr;
         }
@@ -44,6 +44,18 @@ namespace TicTacToe
             }
 
             return computerInput;
+        }
+
+        public static void Display(char[] boardArr)
+        {
+            int i = 1;
+            for (i = 1; i <boardArr.Length; i=i+3)
+            {
+                Console.WriteLine($"{boardArr[i]}         |{boardArr[i+2]}          |{boardArr[i+3]}");
+                Console.WriteLine("\n");
+              
+            }
+            
         }
 
 
